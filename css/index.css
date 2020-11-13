@@ -19,18 +19,14 @@
 
 /* grid containers */
 @media only screen and (min-width: 0px) {
-  .container {
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-  }
-
+ 
   .headercontainer {
     display: grid;
     grid-row: 1;
     grid-template-columns: 1fr 6fr;
     grid-column-gap: 0.4em;
     background: white;
-    /*  */
+    /* den under må endres etterhvert som man legger inn content */
     grid-template-rows: 250px;
   }
 
@@ -41,7 +37,7 @@
     grid-template-columns: 1fr 6fr;
     grid-column-gap: 0.4em;
     background: white;
-    /*  */
+    /* den under må endres etterhvert som man legger inn content */
     grid-template-rows: 600px;
   }
 
@@ -52,7 +48,7 @@
     grid-template-columns: 1fr 6fr;
     grid-column-gap: 0.4em;
     background: white;
-    /*  */
+    /* den under må endres etterhvert som man legger inn content */
     grid-template-rows: 200px;
   }
 }
