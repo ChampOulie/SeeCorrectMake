@@ -5,15 +5,15 @@
 
 /* grid coloring*/
 .headercontainer div {
-    background-color: lightskyblue;
+    background-color: lightgray;
 }
 
 .maincontainer div {
-    background-color: lightcoral;
+    background-color: whitesmoke;
 }
 
 .footercontainer div {
-    background-color: khaki;
+    background-color: rgba(140, 155, 240, 0.349);
 }
 /* */
 
