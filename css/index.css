@@ -38,7 +38,7 @@
     grid-column-gap: 0.4em;
     background: white;
     /* den under må endres etterhvert som man legger inn content */
-    grid-template-rows: 600px;
+    grid-template-rows: 1000px;
   }
 
   .footercontainer {
@@ -49,7 +49,7 @@
     grid-column-gap: 0.4em;
     background: white;
     /* den under må endres etterhvert som man legger inn content */
-    grid-template-rows: 200px;
+    grid-template-rows: 250px;
   }
 }
 /*  */
