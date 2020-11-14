@@ -88,7 +88,7 @@ i {
 }
 
 .header h2 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 200;
   padding-top: 30px;
   padding-left: 45px;
@@ -114,7 +114,6 @@ i {
   display: block;
   margin: 0 auto;
   padding-bottom: 15px;
-  padding-top: 10px;
   float: left;
   border-bottom: 2px solid hsla(0, 0%, 100%, 0.2);
   /* display: flex;
@@ -174,6 +173,7 @@ i {
   flex-direction: row;
   border-radius: 0px;
   padding: 10px;
+  padding-top: 0;
 
   /* border: 1px solid black; */
 }
@@ -196,8 +196,13 @@ i {
   line-height: 25px;
   z-index: 5;
   float: left;
+  letter-spacing: 1px;
 
   font-family: "GothamLight", sans-serif;
+}
+
+.shadowbox h2 {
+  font-size: 1.8em;
 }
 
 .header-holder {
@@ -216,11 +221,9 @@ i {
   display: block;
   padding-top: 20px;
   padding-right: 40px;
-  
 
   width: 40%;
 }
-
 
 .body-image {
   display: block;
@@ -231,7 +234,8 @@ i {
   padding-bottom: 35px;
 }
 
-.btn-grad { /* grad from https://cssgradient.io/gradient-backgrounds/ */
+.btn-grad {
+  /* grad from https://cssgradient.io/gradient-backgrounds/ */
   background-image: linear-gradient(
     to right,
     #aa076b 0%,
@@ -240,7 +244,7 @@ i {
   );
 }
 .btn-grad {
-  margin: 60px;
+  margin: 100px 60px 60px 60px;
   padding: 30px 60px;
   text-align: center;
   text-transform: uppercase;
@@ -265,13 +269,11 @@ i {
   display: flex;
   flex-direction: column;
   padding-top: 40px;
- /*  padding-left: 50px; */
+  /*  padding-left: 50px; */
   /* padding-left: 55px; */
   /* min-height: 30vh;  */
   /* justify-content: space-between; */
 }
-
-
 
 .body-media {
   display: flex;
@@ -335,11 +337,6 @@ i {
       
   } */
 
-
-
-
-
-
 .degrees {
   display: flex;
   flex-direction: column;
@@ -397,7 +394,6 @@ i {
   padding-top: 40px;
   text-align: center;
   line-height: 38px;
-  
 }
 
 .socials a {
@@ -406,7 +402,5 @@ i {
 }
 
 .socials a:hover {
-  
-  color:rgb(184, 140, 255);
-  
+  color: rgb(184, 140, 255);
 }
