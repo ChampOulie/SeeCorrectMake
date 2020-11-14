@@ -1,237 +1,326 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  @font-face {
-    font-family: Serpentine;
-    src: url("../fonts/Serpentine.ttf"); /* https://www.fontspace.com/serpentine-font-f48278 */
-  }
-
-  @font-face {
-      font-family: Gotham;
-      src: url("../fonts/Gotham/Gotham-Black.otf")
-  }
-  /* end of fonts */
-
-
-
-  /* grid containers */
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    grid-column-gap: 0em;
-    grid-template-rows: max-content;
-    background: whitesmoke;
-    background-image: linear-gradient(330deg, #191e2f 44%, #252b40);
-  }
-  
-  .logo {
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    width: 300px;
-    border: 1px solid black;
-  }
-  
-  .logo a {
-    display: inline-block;
-    /* border: 1px solid black; */
-  }
-  
-  .logo a:active {
-    background-color: none;
-  }
-  
-  .logo a {
-    border-radius: 100%;
-    cursor: default;
-  }
-  
-  .logo img {
-    /* border: 1px solid black; */
-    border-radius: 100%;
-  }
-  
-  .logo img:hover {
-    filter: brightness(110%);
-    cursor: pointer;
-  }
-  
-  .header {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  
-  .header h1 {
-    font-size: 45px;
-    padding-top: 80px;
-    padding-left: 40px;
-    font-family: "Gotham",Garamond;
-    text-align: left;
-    /*  */
-    color: #fff;
-  }
-  
-  .header h2 {
-    font-size: 30px;
-    font-weight: 200;
-    padding-top: 30px;
-    padding-left: 45px;
-    letter-spacing: 3px;
-    font-family: "Gotham", Garamond, sans-serif;
-    font-style: italic;
-    text-align: left;
-    /*  */
-    color: #fff;
-  }
-  
-  .menu {
-      grid-row: 2;
-      grid-column: 1;
-      width: 300px;
-      border: 1px solid black;
-  }
-  
-  .menu ul {
-    display: block;
-    margin: 0 auto;
-    padding-top: 10px;
-    float: left;
-    /* display: flex;
-        flex-direction: row; */
-  }
-  
-  .menu li {
-      display: block;
-      list-style-type: none;
-      padding: 4px;
-    }
-  
-  .menu ul li a {
-      display: block;
-      list-style-type: none;
-      font-family: "Serpentine", Garamond, sans-serif; 
-      color: black;
-      font-size: 25px;
-      line-height: 50px;
-      padding: 0 25px;
-      text-transform: uppercase;
-      text-decoration: none;
-      /*  */
-      color: #fff;
-  }
-  
-  .menu li a:hover {
-      text-decoration: none;
-      text-decoration-color: black;
-      font-weight: bold;
-      background-color: lightgray;
-    }
-  
-  
-  .main {
-    grid-column: 2;
-    position: relative;
-    display: block;
-    flex-direction: row;
-    border: 1px solid black;
-    
-  }
-
-  .main a {
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  .shadowbox {
-    min-height: 545px;
-    background-color: #191e2e;
-    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.9);
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    color: white;
-    line-height: 25px;
-  }
+i {
+  vertical-align: middle;
+}
 
-  .header-holder {
-      display: block;
-      padding-left: 40px;
-      padding-top: 40px;
-  }
+@font-face {
+  font-family: Gotham;
+  src: url("../fonts/Gotham/Gotham-Black.otf"); /* https://freefontsfamily.com/gotham-font-family/ */
+}
 
-  .body-text {
-      display: block;
-      padding-top: 20px;
-      width: 60%;
-  }
-  
-  .body-image {
-    display: block;
-    padding-top: 20px;
-    /* padding-left: 160px; */
-    float: right;
-    width: 70%;
-    padding-bottom: 35px;
-  }
-  /* .main {
+@font-face {
+  font-family: GothamLight;
+  src: url("../fonts/Gotham/Gotham-Light.otf");
+}
+
+@font-face {
+  font-family: Cormorant;
+  src: url("../fonts/Cormorant/CormorantGaramond-Bold.otf"); /* https://www.fontsquirrel.com/fonts/cormorant */
+}
+/* end of fonts */
+
+/* grid containers */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0em;
+  grid-template-rows: max-content;
+  background: whitesmoke;
+  background-image: linear-gradient(330deg, #191e2f 44%, #252b40);
+}
+
+.logo {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 300px;
+  /* border: 1px solid black; */
+  /*  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.7); */
+}
+
+.logo a {
+  display: inline-block;
+  /* border: 1px solid black; */
+}
+
+.logo a:active {
+  background-color: none;
+}
+
+.logo a {
+  border-radius: 100%;
+  cursor: default;
+}
+
+.logo img {
+  /* border: 1px solid black; */
+  border-radius: 100%;
+}
+
+.logo img:hover {
+  filter: brightness(110%);
+  cursor: pointer;
+}
+
+.header {
+  grid-column: 2;
+  grid-row: 1;
+  /*  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.9); */
+}
+
+.header h1 {
+  font-size: 45px;
+  padding-top: 80px;
+  padding-left: 40px;
+  font-family: "Gotham", Garamond;
+  text-align: left;
+  /*  */
+  color: #fff;
+}
+
+.header h2 {
+  font-size: 30px;
+  font-weight: 200;
+  padding-top: 30px;
+  padding-left: 45px;
+  letter-spacing: 3px;
+  font-family: GothamLight, Garamond, sans-serif;
+  font-style: italic;
+  text-align: left;
+  /*  */
+  color: #fff;
+}
+
+.menu {
+  grid-row: 2;
+  grid-column: 1;
+  width: 300px;
+  margin-left: 25px;
+  margin-right: 10px;
+  /* box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.9); */
+  /* border: 1px solid black; */
+}
+
+.menu ul {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  float: left;
+  border-bottom: 2px solid hsla(0, 0%, 100%, 0.2);
+  /* display: flex;
+        flex-direction: row; */
+}
+
+.menu li {
+  display: block;
+  list-style-type: none;
+  padding: 4px;
+}
+
+.menu ul li a {
+  display: block;
+  list-style-type: none;
+  font-family: "GothamLight", Garamond, sans-serif;
+  color: black;
+  font-size: 22px;
+  line-height: 60px;
+  padding: 0 5px 0 5px;
+  letter-spacing: 0.8px;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /*  */
+  color: #fff;
+}
+
+.menu li a:hover {
+  text-decoration: none;
+  text-decoration-color: black;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.infotxt a {
+  display: inline-block;
+  color: white;
+  font-family: "Gotham", sans-serif;
+  padding: 35px 0 0 5px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#telnumber {
+  padding-top: 24px;
+}
+
+.main {
+  grid-column: 2;
+  position: relative;
+  display: block;
+  flex-direction: row;
+  border-radius: 0px;
+  padding: 10px;
+
+  /* border: 1px solid black; */
+}
+
+.main a {
+  text-decoration: none;
+}
+
+.shadowbox {
+  /*  border: 0.5px solid white; */
+  min-height: 545px;
+  width: 1300px;
+  background-color: #191e2e;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  color: white;
+  line-height: 25px;
+  z-index: 5;
+  float: left;
+
+  font-family: "GothamLight", sans-serif;
+}
+
+.header-holder {
+  display: block;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.body-text {
+  display: block;
+  padding-top: 20px;
+  padding-right: 40px;
+  width: 40%;
+}
+
+.body-image {
+  display: block;
+  padding-top: 20px;
+  /* padding-left: 160px; */
+  float: right;
+  width: 80%;
+  padding-bottom: 35px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 30px 60px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+  font-family: "Gotham", sans-serif;
+  letter-spacing: 1px;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.body-media {
+  display: block;
+  padding-top: 20px;
+  padding-left: 160px;
+  padding-bottom: 35px;
+  border: 1px solid black;
+}
+/* .main {
       padding: 40px;
       display: flex;
       flex-direction: column;
       
   } */
-  
-  
 
-  .rowflex {
-      display: flex;
-      flex-direction: row;
-      padding-left: 55px;
-      
-  }
-  
-  .columnflex {
-      display: flex;
-      flex-direction: column;
-      /* min-height: 30vh;  */
-      /* justify-content: space-between; */
-      
-  }
+.rowflex {
+  display: flex;
+  flex-direction: row;
+  padding-left: 55px;
+}
 
-  .degrees {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      border: 1px solid black;
-    
-  }
-  
-  .index-box {
-    margin: 2px 2px 2px;
-    width: 200px;
-    height: 150px;
-    text-align: center;
-    line-height: 150px;
-    border: 2px solid black;
-  }
-  
-  .index-box h3 {
-    font-size: 18px;
-  }
+.columnflex {
+  display: flex;
+  flex-direction: column;
+  padding-left: 55px;
+  /* min-height: 30vh;  */
+  /* justify-content: space-between; */
+}
 
+.degrees {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
 
-  #news {
-      margin-top: 100px;
-      
-  }
-  
-  .footer {
-    grid-row: 5;
+.index-box {
+  /*  margin: 8px; */
+  padding: 13px;
+  width: 250px;
+  height: 180px;
+  text-align: center;
+  line-height: 150px;
+  border: 3px solid black;
+  border-radius: 8px;
+  color: white;
+}
+
+.index-box:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.index-box h3 {
+  font-size: 18px;
+}
+
+#news {
+  margin-top: 100px;
+}
+
+.footer {
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: rgba(140, 155, 240, 0.349);
-  }
+    grid-row: 3;
+    position: relative;
+    display: block;
+    flex-direction: row;
+    border-radius: 3px;
+    padding: 10px;
+    min-height: 300px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 1);
+
+  background-color: #191e2e;
+}
