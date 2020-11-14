@@ -63,6 +63,7 @@ i {
 .logo img {
   /* border: 1px solid black; */
   border-radius: 100%;
+  transition: filter 300ms ease;
 }
 
 .logo img:hover {
@@ -137,7 +138,10 @@ i {
   letter-spacing: 0.8px;
   /* text-transform: uppercase; */
   text-decoration: none;
+  background-color: #191e2e;
+  border-radius: 10px;
   /*  */
+  
   color: #fff;
 }
 
@@ -145,7 +149,7 @@ i {
   text-decoration: none;
   text-decoration-color: black;
   font-weight: bold;
-  background-color: lightgray;
+  /* background-color:#61045f; */
 }
 
 .infotxt a {
@@ -316,16 +320,16 @@ i {
     grid-row: 3;
     position: relative;
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-family: Gotham, sans-serif;
     flex-direction: row;
     border-radius: 3px;
     padding: 10px;
     min-height: 300px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 1);
-
-  background-color: #191e2e;
+    background-color: #191e2e;
 }
 
 .footer h2 {
-    padding: 30px;
+    padding: 40px 0 0 40px;
 }
