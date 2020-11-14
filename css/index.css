@@ -222,7 +222,7 @@ i {
   padding-bottom: 35px;
 }
 
-.btn-grad {
+.btn-grad { /* grad from https://cssgradient.io/gradient-backgrounds/ */
   background-image: linear-gradient(
     to right,
     #aa076b 0%,
@@ -247,7 +247,7 @@ i {
 }
 
 .btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; /* direction of change */
   color: #fff;
   text-decoration: none;
 }
