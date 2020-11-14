@@ -330,3 +330,16 @@ i {
 .footer h2 {
   padding: 40px 0 0 40px;
 }
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+}
