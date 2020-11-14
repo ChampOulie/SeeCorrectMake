@@ -316,6 +316,7 @@ i {
     grid-row: 3;
     position: relative;
     display: block;
+    color: white;
     flex-direction: row;
     border-radius: 3px;
     padding: 10px;
@@ -323,4 +324,8 @@ i {
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 1);
 
   background-color: #191e2e;
+}
+
+.footer h2 {
+    padding: 30px;
 }
