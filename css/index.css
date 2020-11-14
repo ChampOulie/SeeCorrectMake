@@ -225,6 +225,10 @@ i {
   width: 40%;
 }
 
+.body-text a {
+  border-radius: 10px;
+}
+
 .body-image {
   display: block;
   padding-top: 20px;
