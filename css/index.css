@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 i {
   vertical-align: middle;
   box-sizing: inherit;
@@ -14,8 +13,6 @@ body {
   height: 100%;
   width: fit-content;
 }
-
-
 
 @font-face {
   font-family: Gotham;
@@ -36,8 +33,6 @@ body {
 /* grid containers */
 .container {
   display: grid;
-
- 
 
   grid-template-rows: auto;
 
@@ -89,11 +84,9 @@ body {
 }
 
 .header h1 {
-
-font-size: calc(30px + 1vw);
-
+  font-size: calc(26px + 1vw);
   padding-top: 80px;
-  padding-left: 40px;
+  padding-left: 25px;
   font-family: "Gotham", Garamond;
   text-align: left;
   /*  */
@@ -104,7 +97,7 @@ font-size: calc(30px + 1vw);
   font-size: 28px;
   font-weight: 200;
   padding-top: 30px;
-  padding-left: 45px;
+  padding-left: 30px;
   letter-spacing: 3px;
   font-family: GothamLight, Garamond, sans-serif;
   font-style: italic;
@@ -195,8 +188,6 @@ font-size: calc(30px + 1vw);
 .shadowbox {
   /*  border: 0.5px solid white; */
 
-
- 
   max-width: 1280px;
   min-height: 480px;
 
@@ -205,6 +196,7 @@ font-size: calc(30px + 1vw);
   background-color: #191e2e;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.9);
   border-radius: 10px;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -224,6 +216,7 @@ font-size: calc(30px + 1vw);
   display: block;
   padding-left: 50px;
   padding-top: 55px;
+  padding-bottom: 6px;
 }
 
 .rowflex {
@@ -232,25 +225,19 @@ font-size: calc(30px + 1vw);
   padding-left: 50px;
 }
 
-
 .rowflex2 {
   display: flex;
   flex-direction: row;
 }
-
-
- 
 
 .campusimg {
   height: auto;
   padding-top: 5px;
   /* width: 38vw; */
   position: relative;
-  max-width:90%;
-  height:auto;
+  max-width: 90%;
+  height: auto;
 }
-
-
 
 .body-text {
   display: block;
@@ -283,15 +270,12 @@ font-size: calc(30px + 1vw);
   );
 }
 .btn-grad {
-  
-  
-
   margin: 3vw 0 0 0;
 
   /* padding: 30px 60px; */
   min-width: 230px;
   min-height: 80px;
-  
+
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -341,7 +325,7 @@ font-size: calc(30px + 1vw);
   padding-top: 80px;
   padding-bottom: 80px;
   /* border: 1px solid black; */
-  
+
   width: 80%;
 }
 
@@ -375,9 +359,6 @@ font-size: calc(30px + 1vw);
   letter-spacing: 1px;
 }
 
-
-
-
 .degrees {
   display: flex;
   flex-direction: column;
@@ -403,7 +384,7 @@ font-size: calc(30px + 1vw);
 }
 
 .index-box h3 {
-  font-size: calc(0.1em + 0.9vw );
+  font-size: calc(0.1em + 0.9vw);
 }
 
 #news {
@@ -452,7 +433,6 @@ font-size: calc(30px + 1vw);
 .socials a:hover {
   color: rgb(184, 140, 255);
 }
-
 
 /* @media only screen and (max-width: 1150px) {
   
