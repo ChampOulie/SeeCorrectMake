@@ -36,7 +36,13 @@ body {
 /* grid containers */
 .container {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+
+ 
+
+  grid-template-rows: auto;
+
+  grid-template-columns: 1fr 9fr 1fr;
+
   grid-column-gap: 0em;
   background-image: linear-gradient(330deg, #191e2f 44%, #252b40);
 }
@@ -46,7 +52,7 @@ body {
   grid-row: 1;
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 30px 30px 0 30px;
   width: 300px;
   /* border: 1px solid black; */
   /*  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.7); */
@@ -83,7 +89,9 @@ body {
 }
 
 .header h1 {
-  font-size: 3.5vw;
+
+font-size: calc(30px + 1vw);
+
   padding-top: 80px;
   padding-left: 40px;
   font-family: "Gotham", Garamond;
@@ -108,7 +116,7 @@ body {
 .menu {
   grid-row: 2;
   grid-column: 1;
-  width: 300px;
+  max-width: 300px;
   margin-left: 25px;
   margin-right: 10px;
   /* box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.9); */
@@ -186,8 +194,14 @@ body {
 
 .shadowbox {
   /*  border: 0.5px solid white; */
-  /* min-height: 545px; */
+
+
+ 
   max-width: 1280px;
+  min-height: 480px;
+
+  /* min-height: 545px; */
+
   background-color: #191e2e;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.9);
   border-radius: 10px;
@@ -203,7 +217,7 @@ body {
 }
 
 .shadowbox h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 .header-holder {
@@ -218,13 +232,25 @@ body {
   padding-left: 50px;
 }
 
+
+.rowflex2 {
+  display: flex;
+  flex-direction: row;
+}
+
+
+ 
+
 .campusimg {
   height: auto;
+  padding-top: 5px;
   /* width: 38vw; */
   position: relative;
   max-width:90%;
   height:auto;
 }
+
+
 
 .body-text {
   display: block;
@@ -257,12 +283,15 @@ body {
   );
 }
 .btn-grad {
-  margin: 100px 0 0 0;
+  
+  
+
+  margin: 3vw 0 0 0;
+
   /* padding: 30px 60px; */
   min-width: 230px;
   min-height: 80px;
   
-
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -319,7 +348,7 @@ body {
 .body-news div {
   background-size: cover !important;
   width: 33.3%;
-  height: 300px;
+  height: 20vw;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -342,12 +371,12 @@ body {
   text-decoration: none;
   color: black;
   font-family: Gotham, sans-serif;
+  font-size: 1vw;
   letter-spacing: 1px;
 }
 
-.body-news img {
-  width: 18vw;
-}
+
+
 
 .degrees {
   display: flex;
@@ -359,8 +388,9 @@ body {
 .index-box {
   /*  margin: 8px; */
   padding: 13px;
-  width: 250px;
-  height: 180px;
+  width: 18vw;
+  max-width: 310px;
+  max-height: 180px;
   text-align: center;
   line-height: 150px;
   border: 3px solid black;
@@ -373,7 +403,7 @@ body {
 }
 
 .index-box h3 {
-  font-size: 18px;
+  font-size: calc(0.1em + 0.9vw );
 }
 
 #news {
@@ -422,3 +452,23 @@ body {
 .socials a:hover {
   color: rgb(184, 140, 255);
 }
+
+
+/* @media only screen and (max-width: 1150px) {
+  
+  .header {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .menu {
+    grid-row: 3;
+  }
+  
+  
+  .main {
+    grid-column: 1;
+  }
+
+
+} */
