@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 
+
 i {
   vertical-align: middle;
+  box-sizing: inherit;
 }
+
+body {
+  height: 100%;
+  width: fit-content;
+}
+
+
 
 @font-face {
   font-family: Gotham;
@@ -27,15 +36,14 @@ i {
 /* grid containers */
 .container {
   display: grid;
-<<<<<<< Updated upstream
-  grid-template-columns: 1fr 6fr;
+
+ 
+
   grid-template-rows: auto;
-=======
+
   grid-template-columns: 1fr 9fr 1fr;
->>>>>>> Stashed changes
+
   grid-column-gap: 0em;
-  grid-template-rows: max-content;
-  background: whitesmoke;
   background-image: linear-gradient(330deg, #191e2f 44%, #252b40);
 }
 
@@ -78,15 +86,12 @@ i {
 .header {
   grid-column: 2;
   grid-row: 1;
-  /*  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.9); */
 }
 
 .header h1 {
-<<<<<<< Updated upstream
-  font-size: 45px;
-=======
-  font-size: calc(30px + 1vw);
->>>>>>> Stashed changes
+
+font-size: calc(30px + 1vw);
+
   padding-top: 80px;
   padding-left: 40px;
   font-family: "Gotham", Garamond;
@@ -176,9 +181,6 @@ i {
 
 .main {
   grid-column: 2;
-  position: relative;
-  display: block;
-  flex-direction: row;
   border-radius: 0px;
   padding: 10px;
   padding-top: 0;
@@ -192,14 +194,14 @@ i {
 
 .shadowbox {
   /*  border: 0.5px solid white; */
-<<<<<<< Updated upstream
-  min-height: 545px;
-  width: 1300px;
-=======
-  /* min-height: 545px; */
+
+
+ 
   max-width: 1280px;
   min-height: 480px;
->>>>>>> Stashed changes
+
+  /* min-height: 545px; */
+
   background-color: #191e2e;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.9);
   border-radius: 10px;
@@ -208,7 +210,6 @@ i {
   margin-bottom: 40px;
   color: white;
   line-height: 25px;
-  z-index: 5;
   float: left;
   letter-spacing: 1px;
 
@@ -231,12 +232,14 @@ i {
   padding-left: 50px;
 }
 
-<<<<<<< Updated upstream
-=======
+
 .rowflex2 {
   display: flex;
   flex-direction: row;
 }
+
+
+ 
 
 .campusimg {
   height: auto;
@@ -247,7 +250,8 @@ i {
   height:auto;
 }
 
->>>>>>> Stashed changes
+
+
 .body-text {
   display: block;
   padding-top: 20px;
@@ -279,17 +283,15 @@ i {
   );
 }
 .btn-grad {
-<<<<<<< Updated upstream
-  margin: 100px 60px 60px 60px;
-  padding: 30px 60px;
-=======
+  
+  
+
   margin: 3vw 0 0 0;
+
   /* padding: 30px 60px; */
   min-width: 230px;
   min-height: 80px;
   
-
->>>>>>> Stashed changes
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -335,10 +337,11 @@ i {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
+  position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
   /* border: 1px solid black; */
-  position: relative;
+  
   width: 80%;
 }
 
@@ -408,11 +411,11 @@ i {
 }
 
 .footer {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row: 3;
-  position: relative;
-  display: block;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  /* grid-row: 3; */
+  /* position: relative; */
+  /* display: block; */
   color: rgb(255, 255, 255);
   font-family: Gotham, sans-serif;
   flex-direction: row;
@@ -429,6 +432,7 @@ i {
 .socials {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 40px;
   text-align: center;
@@ -438,6 +442,11 @@ i {
 .socials a {
   text-decoration: none;
   color: white;
+}
+
+.flexitem {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .socials a:hover {
