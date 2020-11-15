@@ -27,9 +27,12 @@ i {
 /* grid containers */
 .container {
   display: grid;
+<<<<<<< Updated upstream
   grid-template-columns: 1fr 6fr;
   grid-template-rows: auto;
+=======
   grid-template-columns: 1fr 9fr 1fr;
+>>>>>>> Stashed changes
   grid-column-gap: 0em;
   grid-template-rows: max-content;
   background: whitesmoke;
@@ -79,8 +82,11 @@ i {
 }
 
 .header h1 {
+<<<<<<< Updated upstream
   font-size: 45px;
+=======
   font-size: calc(30px + 1vw);
+>>>>>>> Stashed changes
   padding-top: 80px;
   padding-left: 40px;
   font-family: "Gotham", Garamond;
@@ -186,11 +192,14 @@ i {
 
 .shadowbox {
   /*  border: 0.5px solid white; */
+<<<<<<< Updated upstream
   min-height: 545px;
   width: 1300px;
+=======
   /* min-height: 545px; */
   max-width: 1280px;
   min-height: 480px;
+>>>>>>> Stashed changes
   background-color: #191e2e;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.9);
   border-radius: 10px;
@@ -222,6 +231,8 @@ i {
   padding-left: 50px;
 }
 
+<<<<<<< Updated upstream
+=======
 .rowflex2 {
   display: flex;
   flex-direction: row;
@@ -236,6 +247,7 @@ i {
   height:auto;
 }
 
+>>>>>>> Stashed changes
 .body-text {
   display: block;
   padding-top: 20px;
@@ -267,14 +279,17 @@ i {
   );
 }
 .btn-grad {
+<<<<<<< Updated upstream
   margin: 100px 60px 60px 60px;
   padding: 30px 60px;
+=======
   margin: 3vw 0 0 0;
   /* padding: 30px 60px; */
   min-width: 230px;
   min-height: 80px;
   
 
+>>>>>>> Stashed changes
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
