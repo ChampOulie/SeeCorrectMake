@@ -97,7 +97,8 @@ body {
 }
 
 .header h2 {
-  font-size: 28px;
+  font-size: calc(12px + 1vw);
+  /* font-size: 28px; */
   font-weight: 200;
   padding-top: 30px;
   padding-left: 30px;
