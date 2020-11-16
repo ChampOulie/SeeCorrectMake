@@ -266,7 +266,7 @@ body {
   padding-bottom: 35px;
 }
 
-.btn-grad {
+.btn-grad3 {
   /* grad from https://cssgradient.io/gradient-backgrounds/ */
   background-image: linear-gradient(
     to right,
@@ -275,7 +275,7 @@ body {
     #aa076b 100%
   );
 }
-.btn-grad {
+.btn-grad3 {
   margin: 3vw 0 25px 0;
 
   /* padding: 30px 60px; */
@@ -295,7 +295,46 @@ body {
   letter-spacing: 1px;
 }
 
-.btn-grad:hover {
+.btn-grad2 {
+  margin: 3vw 0 25px 0;
+
+  /* padding: 30px 60px; */
+  max-width: 230px;
+  max-height: 80px;
+
+  padding: 27px 25px 25px 25px;
+  font-size: 14px;
+
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+  font-family: "Gotham", sans-serif;
+  letter-spacing: 1px;
+}
+
+.btn-grad2 {
+  /* grad from https://cssgradient.io/gradient-backgrounds/ */
+  background-image: linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
+}
+
+.btn-grad2:hover {
+  background-position: right center; /* direction of change */
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-grad3:hover {
   background-position: right center; /* direction of change */
   color: #fff;
   text-decoration: none;
@@ -442,7 +481,7 @@ body {
   color: rgb(184, 140, 255);
 }
 
-.test {
+.degreebutton {
   /* border: 1px solid white; */
   margin: 7px;
 
